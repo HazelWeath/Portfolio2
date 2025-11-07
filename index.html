@@ -21,11 +21,11 @@
 
   <section id="accueil" class="container accueil">
     <h1>Bienvenue sur mon portfolio</h1>
-    <p>Je suis [Ton Nom], étudiant en BUT Réseaux & Télécom, passionné par les réseaux, la cybersécurité et le développement.</p>
+    <p>Je suis Naïm GHARES, étudiant en BUT Réseaux & Télécom, passionné par les réseaux, les maths et le développement.</p>
     <a href="cv/ton-cv.pdf" class="btn" download>Télécharger mon CV</a>
     <div class="contact">
-      <p><strong>Téléphone :</strong> 06 XX XX XX XX</p>
-      <p><strong>Email :</strong> ton.email@example.com</p>
+      <p><strong>Téléphone :</strong> <a class="lien" href="tel:+33782235904">07 82 23 59 04</a></p>
+      <p><strong>Email :</strong><a class="lien" href="mailto:naimghares@gmail.com">naimghares@gmail.com</a></p>
     </div>
   </section>
 
@@ -33,12 +33,14 @@
     <h1>Mon Parcours</h1>
     <div class="timeline">
       <div class="timeline-item">
-        <h3>2023 - BUT Réseaux & Télécom</h3>
-        <p>Université de [Nom]</p>
+        <h3>2024 - BUT Réseaux & Télécom</h3>
+		<p>Option Cybersécurité ( à partir de la deuxième année</p>
+        <p>Université de Tours (Site de Blois)</p>
       </div>
       <div class="timeline-item">
-        <h3>2020 - Bac STI2D</h3>
-        <p>Lycée [Nom]</p>
+        <h3>2021 - Bac Générale</h3>
+		<p>Spécialité Maths, Physique-chimie et NSI avec option Maths Expertes</p>
+        <p>Lycée François Philibert Dessaignes</p>
       </div>
     </div>
   </section>
@@ -64,19 +66,40 @@
     </div>
   </section>
 
-  <section id="competences" class="container">
-    <h1>Mes Compétences</h1>
-    <div class="skills">
-      <div class="skill">
-        <p>HTML</p>
-        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
-      </div>
-      <div class="skill">
-        <p>CSS</p>
-        <div class="bar"><div class="fill" style="width: 85%;"></div></div>
-      </div>
-    </div>
-  </section>
+  <section class="skills-section">
+  <h2>Mes compétences</h2>
+  <table class="skills-table">
+    <thead>
+      <tr>
+        <th>Réseau</th>
+        <th>Informatique</th>
+        <th>Télécommunication</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Configuration IP / DHCP / DNS</td>
+        <td>HTML / CSS / JavaScript</td>
+        <td>Transmission analogique / numérique</td>
+      </tr>
+      <tr>
+        <td>Routage (static / dynamique)</td>
+        <td>Python / Bash / Java</td>
+        <td>Modulation / multiplexage</td>
+      </tr>
+      <tr>
+        <td>Switching / VLAN</td>
+        <td>Linux / Windows Server</td>
+        <td>Infrastructure des Opérateurs</td>
+      </tr>
+      <tr>
+        <td>Wi-Fi / Sécurité réseau</td>
+        <td>Virtualisation (VirtualBox)</td>
+        <td>VoIP / Téléphonie IP</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
 	<section id="contact" class="container contact-section">
 		<h1>Contact</h1>
@@ -87,12 +110,12 @@
 		  <input type="hidden" name="_captcha" value="false">
 
 		  <label for="email">Votre email :</label>
-		  <input type="email" name="email" id="email" required>
+		  <center><input type="email" name="email" id="email" required></center>
 
 		  <label for="message">Votre message :</label>
-		  <textarea name="message" id="message" rows="5" required></textarea>
+		  <center><textarea name="message" id="message" rows="5" required></textarea></center>
 
-		  <button type="submit">Envoyer</button>
+		  <center><button type="submit">Envoyer</button></center>
 		</form>
 
 
