@@ -80,11 +80,21 @@
 
 	<section id="contact" class="container contact-section">
 		<h1>Contact</h1>
-		<form id="contact-form" method="POST">
-		  <input type="email" name="email" placeholder="Votre email" required>
-		  <textarea name="message" placeholder="Votre message" required></textarea>
+		<form action="https://formsubmit.co/naimghares@gmail.com" method="POST" class="contact-form">
+		  <!-- Champ caché pour redirection après envoi -->
+		  <input type="hidden" name="_next" value="https://portfolio-naim-ghares.netlify.app/thank-you.html">
+		  <!-- Champ caché pour désactiver le captcha -->
+		  <input type="hidden" name="_captcha" value="false">
+
+		  <label for="email">Votre email :</label>
+		  <input type="email" name="email" id="email" required>
+
+		  <label for="message">Votre message :</label>
+		  <textarea name="message" id="message" rows="5" required></textarea>
+
 		  <button type="submit">Envoyer</button>
 		</form>
+
 
 	</section>
 
