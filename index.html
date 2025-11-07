@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="accueil" class="container accueil">
+    <h1>Bienvenue sur mon portfolio</h1>
+    <p>Je suis [Ton Nom], étudiant en BUT Réseaux & Télécom, passionné par les réseaux, la cybersécurité et le développement.</p>
+    <a href="cv/ton-cv.pdf" class="btn" download>Télécharger mon CV</a>
+    <div class="contact">
+      <p><strong>Téléphone :</strong> 06 XX XX XX XX</p>
+      <p><strong>Email :</strong> ton.email@example.com</p>
+    </div>
+  </section>
+
+  <section id="parcours" class="container">
+    <h1>Mon Parcours</h1>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>2023 - BUT Réseaux & Télécom</h3>
+        <p>Université de [Nom]</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2020 - Bac STI2D</h3>
+        <p>Lycée [Nom]</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets" class="container">
+    <h1>Mes Projets</h1>
+    <div class="grid">
+      <div class="card">
+	  <h3>Projet 1</h3>
+	  <p>Description rapide...</p>
+	  <button class="btn" onclick="openModal('modal1')">Voir plus</button>
+	</div>
+
+	<div id="modal1" class="modal">
+	  <div class="modal-content">
+		<span class="close" onclick="closeModal('modal1')">&times;</span>
+		<h2>Détails du projet 1</h2>
+		<p>Contenu détaillé ici...</p>
+	  </div>
+	</div>
+
+      <!-- Ajoute d'autres cartes ici -->
+    </div>
+  </section>
+
+  <section id="competences" class="container">
+    <h1>Mes Compétences</h1>
+    <div class="skills">
+      <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container contact-section">
+    <h1>Contact</h1>
+    <form action="https://formspree.io/f/xyz123" method="POST" class="contact-form">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+</body>
+</html>
