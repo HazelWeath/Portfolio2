@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naïm | Portfolio R&T</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+
+    <nav class="navbar">
+        <div class="logo">Naïm<span class="highlight">.rt</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="btn-nav"><button id="terminal-toggle">_Terminal</button></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1>Salut, je suis <span class="highlight">Naïm</span></h1>
+            <h2><span class="txt-type" data-wait="3000" data-words='["Étudiant R&T", "Passionné Réseaux"]'></span></h2>
+            <p>Étudiant en 2ème année de BUT R&T. Je conçois des architectures réseaux sécurisées et j'automatise les déploiements.</p>
+            
+            <div class="hero-btns">
+                <a href="#projects" class="btn">Voir mes projets</a>
+                <a href="./assets/cv.pdf" target="_blank" class="btn btn-outline">Mon CV</a>
+            </div>
+
+            <div class="terminal-window hidden" id="interactive-terminal">
+                <div class="terminal-header">
+                    <div class="buttons">
+                        <span class="dot red" id="close-terminal"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="title">bash -- naïm@portfolio (Tapez 'help')</div>
+                </div>
+                <div class="terminal-body" id="terminal-container">
+                    <div id="terminal-output">
+                        <p>Bienvenue dans le terminal de Naïm. Tapez 'help' pour voir les commandes.</p>
+                    </div>
+                    <div class="input-line">
+                        <span class="prompt">naïm@rt:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-img reveal">
+            <img src="./assets/img/naim.png" alt="Photo de profil de Naïm">
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title reveal">Mes Compétences</h2>
+        <div class="skills-container">
+            <div class="skill-card reveal">
+                <h3>Réseaux & Système</h3>
+                <p>Cisco, Linux, Windows Server, Protocoles.</p>
+            </div>
+            <div class="skill-card reveal">
+                <h3>Développement</h3>
+                <p>Python, Bash, HTML/CSS, JavaScript, Java.</p>
+            </div>
+            <div class="skill-card reveal">
+                <h3>Outils & Virtualisation</h3>
+                <p>Wireshark, Packet Tracer, GNS3, VirtualBox.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title reveal">Mes Projets (SAE)</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card reveal">
+                <div class="card-header">
+                    <span>SAE 3.01</span>
+                </div>
+                <h3>Sécurisation Infrastructure</h3>
+                <p>Mise en place d'un pare-feu et segmentation réseau pour une PME fictive.</p>
+                <div class="tech-stack">
+                    <span>Cisco</span>
+                    <span>ACL</span>
+                    <span>Pfsense</span>
+                </div>
+                <button class="link-icon btn-modal-trigger" data-modal-target="#modal-project1">Voir le détail &rarr;</button>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="card-header">
+                    <span>SAE 2.03</span>
+                </div>
+                <h3>Portfolio Personnel</h3>
+                <p>Développement de ce site web from scratch en HTML/CSS/JS.</p>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+                <button class="link-icon btn-modal-trigger" data-modal-target="#modal-project2">Voir le détail &rarr;</button>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="card-header">
+                    <span>SAE 1.05</span>
+                </div>
+                <h3>Serveur Web Linux</h3>
+                <p>Installation et configuration d'un serveur Apache LAMP.</p>
+                <div class="tech-stack">
+                    <span>Linux</span>
+                    <span>Apache</span>
+                    <span>MySQL</span>
+                </div>
+                 <button class="link-icon btn-modal-trigger" data-modal-target="#modal-project3">Voir le détail &rarr;</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal">
+        <h2 class="section-title">Me Contacter</h2>
+        <p>Un projet ou une proposition de stage ? Envoyez-moi un message.</p>
+        
+        <form action="https://formspree.io/f/xyzlggvo" method="POST" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Votre Nom" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="_replyto" placeholder="Votre Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Votre Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer le message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Naïm</p>
+    </footer>
+
+    <div class="modal-overlay" id="modal-project1">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h2>Détails : Sécurisation Infrastructure</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>Contexte :</strong> Sécurisation du réseau interne d'une PME.</p>
+                <ul>
+                    <li>Configuration Switchs Cisco (VLANs).</li>
+                    <li>Routage inter-VLAN et ACLs.</li>
+                    <li>Déploiement Pare-feu Pfsense.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-project2">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h2>Détails : Portfolio Personnel</h2>
+            </div>
+            <div class="modal-body">
+                <p>Site développé sans framework.</p>
+                <ul>
+                    <li>HTML / CSS (Grid & Flexbox).</li>
+                    <li>JavaScript Vanilla (Terminal, Modales).</li>
+                    <li>Design Cyber/Tech.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <div class="modal-overlay" id="modal-project3">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+             <div class="modal-header">
+                <h2>Détails : Serveur Web Linux</h2>
+            </div>
+            <div class="modal-body">
+               <p>Installation d'une stack LAMP sur Debian.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
