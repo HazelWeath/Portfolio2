@@ -21,6 +21,7 @@
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
+			<li class="theme-switch"><i class="fas fa-sun" id="theme-toggle"></i></li>
             <li class="btn-nav"><button id="terminal-toggle">_Terminal</button></li>
         </ul>
         <div class="burger">
@@ -91,42 +92,42 @@
             
             <div class="project-card reveal">
                 <div class="card-header">
-                    <span>SAE 3.01</span>
+                    <span>SAE 2.01</span>
                 </div>
-                <h3>Sécurisation Infrastructure</h3>
-                <p>Mise en place d'un pare-feu et segmentation réseau pour une PME fictive.</p>
+                <h3>Créer un réseau de petite entreprise</h3>
+                <p>Conception complète d'une infrastructure PME (LAN, DMZ) interconnectée à un FAI simulé via Backbone IPv6.</p>
                 <div class="tech-stack">
                     <span>Cisco</span>
-                    <span>ACL</span>
-                    <span>Pfsense</span>
+                    <span>OSPFv3</span>
+                    <span>Sécurité</span>
                 </div>
                 <button class="link-icon btn-modal-trigger" data-modal-target="#modal-project1">Voir le détail &rarr;</button>
             </div>
 
             <div class="project-card reveal">
                 <div class="card-header">
-                    <span>SAE 2.03</span>
+                    <span>SAE 1.01</span>
                 </div>
-                <h3>Portfolio Personnel</h3>
-                <p>Développement de ce site web from scratch en HTML/CSS/JS.</p>
+                <h3>Se sensibiliser à l'hygiène informatique</h3>
+                <p>Stratégie de sensibilisation aux risques numériques : Social Engineering, gestion des mots de passe et chiffrement.</p>
                 <div class="tech-stack">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
+                    <span>ANSSI</span>
+                    <span>Analyse de risques</span>
+                    <span>RGPD</span>
                 </div>
                 <button class="link-icon btn-modal-trigger" data-modal-target="#modal-project2">Voir le détail &rarr;</button>
             </div>
 
             <div class="project-card reveal">
                 <div class="card-header">
-                    <span>SAE 1.05</span>
+                    <span>SAE 1.03</span>
                 </div>
-                <h3>Serveur Web Linux</h3>
-                <p>Installation et configuration d'un serveur Apache LAMP.</p>
+                <h3>Analyse de Signal</h3>
+                <p>Étude approfondie de la couche physique (OSI 1) : mesures à l'oscilloscope, réflectométrie et atténuation.</p>
                 <div class="tech-stack">
-                    <span>Linux</span>
-                    <span>Apache</span>
-                    <span>MySQL</span>
+                    <span>Physique</span>
+                    <span>Câblage</span>
+                    <span>Mesures</span>
                 </div>
                  <button class="link-icon btn-modal-trigger" data-modal-target="#modal-project3">Voir le détail &rarr;</button>
             </div>
@@ -160,15 +161,32 @@
         <div class="modal-content">
             <button class="close-modal">&times;</button>
             <div class="modal-header">
-                <h2>Détails : Sécurisation Infrastructure</h2>
+                <h2>Créer un réseau de petite entreprise</h2>
+                <p class="subtitle">Conception d'une infrastructure PME interconnectée</p>
             </div>
             <div class="modal-body">
-                <p><strong>Contexte :</strong> Sécurisation du réseau interne d'une PME.</p>
+                <h3>Contexte & Enjeux</h3>
+                <p>Déploiement complet d'une infrastructure réseau simulant une PME interconnectée à un Fournisseur d'Accès Internet (FAI). L'objectif était de maîtriser la chaîne de liaison complète, du poste utilisateur jusqu'au cœur de réseau (Backbone).</p>
+
+                <h3>Solution Technique Déployée</h3>
                 <ul>
-                    <li>Configuration Switchs Cisco (VLANs).</li>
-                    <li>Routage inter-VLAN et ACLs.</li>
-                    <li>Déploiement Pare-feu Pfsense.</li>
+                    <li><strong>Architecture Sécurisée :</strong> Mise en place d'une <strong>DMZ</strong> (Zone Démilitarisée) pour isoler les serveurs publics (Web, DNS) du réseau interne (LAN).</li>
+                    <li><strong>Routage Avancé :</strong> Implémentation du protocole <strong>OSPFv3</strong> pour assurer un routage dynamique et résilient sur une double pile IPv4/IPv6.</li>
+                    <li><strong>Services Réseaux :</strong> Configuration de serveurs DNS (Split-Horizon) et de services de messagerie interne.</li>
+                    <li><strong>Segmentation :</strong> Découpage du réseau en VLANs par service (RH, Technique, Invités) pour limiter les domaines de diffusion.</li>
                 </ul>
+
+                <h3>Compétences Clés</h3>
+                <div class="tech-stack">
+                    <span>Cisco IOS</span>
+                    <span>IPv6 / OSPFv3</span>
+                    <span>ACL & NAT</span>
+                    <span>Services Linux</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <a href="./assets/rapport-reseau.pdf" target="_blank" class="btn btn-outline">📄 Consulter le rapport technique</a>
+                </div>
             </div>
         </div>
     </div>
@@ -177,27 +195,58 @@
         <div class="modal-content">
             <button class="close-modal">&times;</button>
             <div class="modal-header">
-                <h2>Détails : Portfolio Personnel</h2>
+                <h2>Se sensibiliser à l'hygiène informatique</h2>
+                <p class="subtitle">Analyse des vecteurs d'attaque et prévention</p>
             </div>
             <div class="modal-body">
-                <p>Site développé sans framework.</p>
+                <h3>Contexte</h3>
+                <p>Partant du constat que 90% des incidents de sécurité proviennent d'une erreur humaine, ce projet visait à analyser les menaces actuelles pour construire une stratégie de défense préventive.</p>
+
+                <h3>Analyse & Méthodologie</h3>
                 <ul>
-                    <li>HTML / CSS (Grid & Flexbox).</li>
-                    <li>JavaScript Vanilla (Terminal, Modales).</li>
-                    <li>Design Cyber/Tech.</li>
+                    <li><strong>Social Engineering :</strong> Étude des mécanismes psychologiques utilisés dans le Phishing et le Vishing.</li>
+                    <li><strong>Analyse de Malwares :</strong> Compréhension du fonctionnement technique des Ransomwares et Trojans.</li>
+                    <li><strong>Bonnes Pratiques (ANSSI) :</strong> Élaboration de recommandations sur l'authentification forte (MFA), la gestion des mots de passe (Keepass) et la sécurisation des postes nomades.</li>
                 </ul>
+
+                <h3>Compétences Clés</h3>
+                <div class="tech-stack">
+                    <span>Analyse de risques</span>
+                    <span>RGPD / ANSSI</span>
+                    <span>Sécurité Physique</span>
+                </div>
+
+                 <div style="margin-top: 20px;">
+                    <a href="./assets/rapport-cyber.pdf" target="_blank" class="btn btn-outline">📄 Voir le support de prévention</a>
+                </div>
             </div>
         </div>
     </div>
 
-     <div class="modal-overlay" id="modal-project3">
+    <div class="modal-overlay" id="modal-project3">
         <div class="modal-content">
             <button class="close-modal">&times;</button>
              <div class="modal-header">
-                <h2>Détails : Serveur Web Linux</h2>
+                <h2>Analyse de Signal & Supports</h2>
+                <p class="subtitle">Étude de la couche physique (OSI 1)</p>
             </div>
             <div class="modal-body">
-               <p>Installation d'une stack LAMP sur Debian.</p>
+               <h3>Contexte</h3>
+               <p>Validation théorique et pratique des contraintes liées à la transmission de données sur supports cuivre (RJ45) et optiques.</p>
+
+               <h3>Expérimentations</h3>
+               <ul>
+                   <li><strong>Réflectométrie :</strong> Analyse des phénomènes de réflexion du signal (échos) dus à une mauvaise adaptation d'impédance.</li>
+                   <li><strong>Mesures à l'Oscilloscope :</strong> Calcul de l'atténuation linéique (dB) et de la vitesse de propagation sur différentes longueurs de câbles.</li>
+                   <li><strong>Diagnostic :</strong> Identification de défauts physiques (court-circuit, circuit ouvert) via l'analyse de la forme d'onde.</li>
+               </ul>
+
+               <h3>Compétences Clés</h3>
+               <div class="tech-stack">
+                    <span>Oscilloscope</span>
+                    <span>Physique du signal</span>
+                    <span>Câblage Structuré</span>
+                </div>
             </div>
         </div>
     </div>

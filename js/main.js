@@ -193,4 +193,24 @@ document.addEventListener('DOMContentLoaded', () => {
         terminalInput.focus();
     });
 
+});// --- 5. LIGHT MODE TOGGLE ---
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Vérifier si le mode était déjà activé
+if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-mode');
+    themeToggle.classList.replace('fa-sun', 'fa-moon');
+}
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+    if (body.classList.contains('light-mode')) {
+        themeToggle.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeToggle.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
+    }
 });
