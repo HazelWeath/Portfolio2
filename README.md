@@ -15,11 +15,11 @@ Ce projet a été conçu "From Scratch" (sans framework lourd) pour présenter m
 
 Ce n'est pas qu'une simple page statique. J'ai intégré plusieurs fonctionnalités interactives pour démontrer mes compétences en développement web :
 
-* ** Design Dual-Theme :** Système de bascule **Mode Sombre / Mode Clair** complet (persistant via `localStorage`).
-* ** Terminal Interactif :** Un widget simulant un shell Bash (invite de commande) capable de répondre à des commandes comme `help`, `whoami` ou `ping`.
-* ** 100% Responsive :** Interface fluide adaptée aux mobiles (Menu burger animé, grille flexible).
-* ** UX Dynamique :** Animations d'apparition au scroll (Scroll Reveal) et fond animé discret (Grid Moving).
-* ** Modales Détaillées :** Présentation approfondie des projets (Contexte, Stack technique, Solutions) sans quitter la page.
+* **Design Dual-Theme :** Système de bascule **Mode Sombre / Mode Clair** complet (persistant via `localStorage`).
+* **Terminal Interactif :** Un widget simulant un shell Bash (invite de commande) capable de répondre à des commandes comme `help`, `whoami` ou `ping`.
+* **100% Responsive :** Interface fluide adaptée aux mobiles (Menu burger animé, grille flexible).
+* **UX Dynamique :** Animations d'apparition au scroll (Scroll Reveal) et fond animé discret (Grid Moving).
+* **Modales Détaillées :** Présentation approfondie des projets (Contexte, Stack technique, Solutions) sans quitter la page.
 
 ---
 
