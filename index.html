@@ -35,7 +35,14 @@
         <div class="hero-content reveal">
             <h1>Salut, je suis <span class="highlight">Naïm</span></h1>
             <h2><span class="txt-type" data-wait="3000" data-words='["Étudiant R&T", "Passionné Réseaux"]'></span></h2>
-            <p>Étudiant en 2ème année de BUT R&T. Je conçois des architectures réseaux sécurisées et j'automatise les déploiements.</p>
+            <p>
+				Je suis <strong>Naïm Ghares</strong>, étudiant en 2ème année de BUT R&T.
+				Ce qui me motive ? La résolution de problèmes complexes. J'aborde chaque contrainte technique comme un défi logique, en appliquant une méthodologie de dépannage (approche ascendante).
+				<br><br>
+				Attiré par la Cybersécurité, je me forme durant mon temps libre sur les techniques offensives via <strong>TryHackMe</strong> pour mieux comprendre comment défendre une infrastructure.
+				<br><br>
+				Côté personnel, la <strong>spéléologie</strong> et l'<strong>escalade</strong> m'ont appris deux valeurs essentielles : la confiance en son binôme et la capacité à garder son sang-froid en environnement contraint.
+			</p>
             
             <div class="hero-btns">
                 <a href="#projects" class="btn">Voir mes projets</a>
@@ -80,8 +87,12 @@
                 <p>Python, Bash, HTML/CSS, JavaScript, Java.</p>
             </div>
             <div class="skill-card reveal">
-                <h3>Outils & Virtualisation</h3>
-                <p>Wireshark, Packet Tracer, GNS3, VirtualBox.</p>
+                <h3>Outils & Méthodologie</h3>
+                <p>Wireshark, Packet Tracer, GNS3.</p>
+                <div class="tech-stack">
+                    <span>Dépannage Ascendant</span>
+                    <span>TryHackMe</span> <span>Automatisation</span>
+                </div>
             </div>
         </div>
     </section>
@@ -95,7 +106,7 @@
                     <span>SAE 2.01</span>
                 </div>
                 <h3>Créer un réseau de petite entreprise</h3>
-                <p>Conception complète d'une infrastructure PME (LAN, DMZ) interconnectée à un FAI simulé via Backbone IPv6.</p>
+                <p>Conception complète d'une infrastructure PME (LAN, DMZ) interconnectée à un FAI simulé via Backbone IPv4 et IPv6.</p>
                 <div class="tech-stack">
                     <span>Cisco</span>
                     <span>OSPFv3</span>
@@ -173,19 +184,20 @@
                     <li><strong>Architecture Sécurisée :</strong> Mise en place d'une <strong>DMZ</strong> (Zone Démilitarisée) pour isoler les serveurs publics (Web, DNS) du réseau interne (LAN).</li>
                     <li><strong>Routage Avancé :</strong> Implémentation du protocole <strong>OSPFv3</strong> pour assurer un routage dynamique et résilient sur une double pile IPv4/IPv6.</li>
                     <li><strong>Services Réseaux :</strong> Configuration de serveurs DNS (Split-Horizon) et de services de messagerie interne.</li>
-                    <li><strong>Segmentation :</strong> Découpage du réseau en VLANs par service (RH, Technique, Invités) pour limiter les domaines de diffusion.</li>
+                    <li><strong>Segmentation :</strong> Découpage du réseau en VLANs par service pour limiter les domaines de diffusion.</li>
                 </ul>
 
                 <h3>Compétences Clés</h3>
                 <div class="tech-stack">
-                    <span>Cisco IOS</span>
+                    <span>Cisco</span>
                     <span>IPv6 / OSPFv3</span>
                     <span>ACL & NAT</span>
-                    <span>Services Linux</span>
+                    <span>DNS</span>
+					<span>VLANs / SSH</span>
                 </div>
 
                 <div style="margin-top: 20px;">
-                    <a href="./assets/rapport-reseau.pdf" target="_blank" class="btn btn-outline">📄 Consulter le rapport technique</a>
+                    <a href="./assets/sae201.pdf" target="_blank" class="btn btn-outline">Consulter le rapport technique</a>
                 </div>
             </div>
         </div>
@@ -205,7 +217,7 @@
                 <h3>Analyse & Méthodologie</h3>
                 <ul>
                     <li><strong>Social Engineering :</strong> Étude des mécanismes psychologiques utilisés dans le Phishing et le Vishing.</li>
-                    <li><strong>Analyse de Malwares :</strong> Compréhension du fonctionnement technique des Ransomwares et Trojans.</li>
+                    <li><strong>Analyse de Malwares :</strong> Compréhension du fonctionnement technique des Ransomwares.</li>
                     <li><strong>Bonnes Pratiques (ANSSI) :</strong> Élaboration de recommandations sur l'authentification forte (MFA), la gestion des mots de passe (Keepass) et la sécurisation des postes nomades.</li>
                 </ul>
 
@@ -217,7 +229,7 @@
                 </div>
 
                  <div style="margin-top: 20px;">
-                    <a href="./assets/rapport-cyber.pdf" target="_blank" class="btn btn-outline">📄 Voir le support de prévention</a>
+                    <a href="./assets/sae101.pdf" target="_blank" class="btn btn-outline">Voir le support de prévention</a>
                 </div>
             </div>
         </div>
@@ -232,7 +244,7 @@
             </div>
             <div class="modal-body">
                <h3>Contexte</h3>
-               <p>Validation théorique et pratique des contraintes liées à la transmission de données sur supports cuivre (RJ45) et optiques.</p>
+               <p>Validation théorique et pratique des contraintes liées à la transmission de données sur supports cuivre (RJ45).</p>
 
                <h3>Expérimentations</h3>
                <ul>
